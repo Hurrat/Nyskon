@@ -1,0 +1,309 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Strefa Gier Planszowych | Nyskon</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Nyskon">
+<meta name="keywords" content="Nyskon, Fantasy, Fantastyka, Japonistyka, Festiwal fantastyki, Cosplay">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link href='http://fonts.googleapis.com/css?family=Almendra&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link href='style.css' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="grafiki/mini_icon.png" />
+</head>
+
+<body class="w3-center w3-row">
+
+<div id="game_background"></div>
+
+<!-- Navbar -->
+<div class="w3-hide-small w3-hide-medium" style="position:relative; height:200px; margin:auto; width:80%;">
+<a href="index.html" style="float:left; opacity:1;"><img src="grafiki/logo.png"></img></a>
+<a id="NavBars" href="kontakt.html" style="position:relative; font-size:15pt; display:block; float:right; top:40%;"><i class="fa fa-envelope w3-large" style="position:relative; top:1px;"></i> Kontakt</a>
+<a id="NavBars" href="aktualnosci.html" style="position:relative; font-size:15pt; display:block; float:right; top:40%; left:-20px;"><i class="fas fa-calendar-check w3-large" style="position:relative;"></i> Aktualności</a>
+<a id="NavBars" href="index.html" style="position:relative; font-size:15pt; display:block; float:right; top:40%; left:-40px;"><i class="fa fa-home w3-large" style="position:relative;"></i> Strona główna</a>
+<a id="mini_logos_top" href="https://discord.gg/pHSB87M" target="_blank" class="fab fa-discord w3-xlarge" style="position:relative; display:inline-block; top:47%; float:right; left:-60px;"></a>
+<a id="mini_logos_top" href="https://www.instagram.com/nyskon_official/" target="_blank" class="fab fa-instagram w3-xlarge" style="position:relative; display:inline-block; top:46%; float:right; left:-70px;"></a>
+<a id="mini_logos_top" href="https://www.facebook.com/nyskon/" target="_blank" class="fab fa-facebook-square w3-xlarge" style="position:relative; top:46%; display:inline-block; float:right; left:-80px;"></a>
+</div>
+
+<!-- MobileNavbar -->
+<div class="w3-col m12 s12 w3-hide-large" style="position:relative; margin:auto;">
+<a href="index.html" style="float:left; padding: 8 8 8 8;"><img src="grafiki/mobile_logo.png" style="padding:8px 8px 8px 8px;"></img></a>
+<a href="javascript:void(0)" class="w3-bar-item w3-hide-large" style="padding: 0 0 0 0; position:relative; background-color:rgba(0,0,0,0); float:right; top:3px; right:3px; border-radius:5px; border:2px solid #231d10" id="button" onclick="w3_open()"><i class="fas fa-bars" style="color:#231d10; position:relative; top:2px; padding-left:5px; padding-right:5px;"></i></a>
+</div>
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-large" style="display:none; z-index:2; background-color:#f0eadd;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-medium w3-padding-16" id="button" style="color:black; border-bottom:1px solid #d4c29d;">Zamknij ×</a>
+  <a href="index.html" class="w3-bar-item" id="button" style="color:black; border-bottom:1px solid #d4c29d; font-size: 14pt;">Strona główna</a>
+  <a href="aktualnosci.html" class="w3-bar-item" id="button" style="color:black; border-bottom:1px solid #d4c29d; font-size: 14pt;">Aktualności</a>
+  <a href="kontakt.html" class="w3-bar-item" id="button" style="color:black; border-bottom:1px solid #d4c29d; font-size: 14pt;">Kontakt</a>
+  <a id="mini_logos" href="https://www.facebook.com/nyskon/" target="_blank" class="fab fa-facebook-square w3-xlarge" style="position:relative; top:45%; display:inline-block; top:15px;"></a>
+  <a id="mini_logos" href="https://www.instagram.com/nyskon_official/" target="_blank" class="fab fa-instagram w3-xlarge" style="position:relative; display:inline-block; top:15px;"></a>
+  <a id="mini_logos" href="https://discord.gg/pHSB87M" target="_blank" class="fab fa-discord w3-xlarge" style="position:relative; display:inline-block; top:17px;"></a>
+  <a class="w3-bar" style="color:black; border-bottom:1px solid #d4c29d; border-top:1px solid #d4c29d; font-size: 14pt; position:relative; width:200px; padding-top:3px; top:25px;">Informacje <i class="fa fa-caret-down w3-medium" style="position:relative; top:1px;"></i></a>
+  <a href="o-nyskonie.html" class="w3-bar" style="color:black; font-size: 12pt; position:relative; width:100%; height:auto; text-decoration:none; text-align:left; padding-left:15px; top:25px;">O Nyskonie</a>
+  <a href="poprzednie-edycje.html" class="w3-bar" style="color:black; font-size: 12pt; position:relative; width:100%; height:auto; text-decoration:none; text-align:left; padding-left:15px; top:25px;">Poprzednie edycje</a>
+  <a href="organizacja.html" class="w3-bar" style="color:black; font-size: 12pt; position:relative; width:100%; height:auto; text-decoration:none; text-align:left; padding-left:15px; top:25px;">Organizacja</a>
+  <a href="goscie.html" class="w3-bar" style="color:black; font-size: 12pt; position:relative; width:100%; height:auto; text-decoration:none; text-align:left; padding-left:15px; top:25px;">Goście</a>
+  <a href="regulamin.html" class="w3-bar" style="color:black; font-size: 12pt; position:relative; width:100%; height:auto; text-decoration:none; text-align:left; padding-left:15px; top:25px;">Regulamin</a>
+  
+  <a class="w3-bar" style="color:black; border-bottom:1px solid #d4c29d; border-top:1px solid #d4c29d; font-size: 14pt; position:relative; width:200px; padding-top:3px; top:25px;">Strefy <i class="fa fa-caret-down w3-medium" style="position:relative; top:1px;"></i></a>
+  <a href="strefa-fantasy.html" class="w3-bar" style="color:black; font-size: 12pt; position:relative; width:100%; height:auto; text-decoration:none; text-align:left; padding-left:15px; top:25px;">Fantasy</a>
+  <a href="strefa-japonska.html" class="w3-bar" style="color:black; font-size: 12pt; position:relative; width:100%; height:auto; text-decoration:none; text-align:left; padding-left:15px; top:25px;">Japońska</a>
+  <a href="piknik-na-skraju-nysy.html" class="w3-bar" style="color:black; font-size: 12pt; position:relative; width:100%; height:auto; text-decoration:none; text-align:left; padding-left:15px; top:25px;">Piknik na Skraju Nysy</a>
+  <a href="strefa-furry.html" class="w3-bar" style="color:black; font-size: 12pt; position:relative; width:100%; height:auto; text-decoration:none; text-align:left; padding-left:15px; top:25px;">Furry</a>
+  <a href="strefa-pasji.html" class="w3-bar" style="color:black; font-size: 12pt; position:relative; width:100%; height:auto; text-decoration:none; text-align:left; padding-left:15px; top:25px;">Pasji</a>
+  <a href="strefa-gier-planszowych.html" class="w3-bar" style="color:black; font-size: 12pt; position:relative; width:100%; height:auto; text-decoration:none; text-align:left; padding-left:15px; top:25px;">Gier planszowych</a>
+  
+  <a class="w3-bar" style="color:black; border-bottom:1px solid #d4c29d; border-top:1px solid #d4c29d; font-size: 14pt; position:relative; width:200px; padding-top:3px; top:25px;">Cosplay <i class="fa fa-caret-down w3-medium" style="position:relative; top:1px;"></i></a>
+  <a href="cosplay.html" class="w3-bar" style="color:black; font-size: 12pt; position:relative; width:100%; height:auto; text-decoration:none; text-align:left; padding-left:15px; top:25px;">Zgłoszenie</a>
+  <a href="cosplay-regulamin.html" class="w3-bar" style="color:black; font-size: 12pt; position:relative; width:100%; height:auto; text-decoration:none; text-align:left; padding-left:15px; top:25px;">Regulamin</a>
+  <a href="sala-czempionow.html" class="w3-bar" style="color:black; font-size: 12pt; position:relative; width:100%; height:auto; text-decoration:none; text-align:left; padding-left:15px; top:25px;">Sala Czempionów</a>
+  
+  <a class="w3-bar" style="color:black; border-bottom:1px solid #d4c29d; border-top:1px solid #d4c29d; font-size: 14pt; position:relative; width:200px; padding-top:3px; top:25px;">Bal Strojów Dawnych <i class="fa fa-caret-down w3-medium" style="position:relative; top:1px;"></i></a>
+  <a href="bal-strojow-dawnych.html" class="w3-bar" style="color:black; font-size: 12pt; position:relative; width:100%; height:auto; text-decoration:none; text-align:left; padding-left:15px; top:25px;">Zgłoszenie</a>
+  <a href="bal-strojow-dawnych-regulamin.html" class="w3-bar" style="color:black; font-size: 12pt; position:relative; width:100%; height:auto; text-decoration:none; text-align:left; padding-left:15px; top:25px;">Regulamin</a>
+  
+  <a class="w3-bar" style="color:black; border-bottom:1px solid #d4c29d; border-top:1px solid #d4c29d; font-size: 14pt; position:relative; width:200px; padding-top:3px; top:25px;">Funtastyczna Parada <i class="fa fa-caret-down w3-medium" style="position:relative; top:1px;"></i></a>
+  <a href="funtastyczna-parada.html" class="w3-bar" style="color:black; font-size: 12pt; position:relative; width:100%; height:auto; text-decoration:none; text-align:left; padding-left:15px; top:25px;">Zgłoszenie</a>
+  <a href="funtastyczna-parada-regulamin.html" class="w3-bar" style="color:black; font-size: 12pt; position:relative; width:100%; height:auto; text-decoration:none; text-align:left; padding-left:15px; top:25px;">Regulamin</a>
+  
+  <a class="w3-bar" style="color:black; border-bottom:1px solid #d4c29d; border-top:1px solid #d4c29d; font-size: 14pt; position:relative; width:200px; padding-top:3px; top:25px;">Współpraca <i class="fa fa-caret-down w3-medium" style="position:relative; top:1px;"></i></a>
+  <a href="zglos-wystawce.html" class="w3-bar" style="color:black; font-size: 12pt; position:relative; width:100%; height:auto; text-decoration:none; text-align:left; padding-left:15px; top:25px;">Zgłoś Wystawcę</a>
+  <a href="zglos-atrakcje.html" class="w3-bar" style="color:black; font-size: 12pt; position:relative; width:100%; height:auto; text-decoration:none; text-align:left; padding-left:15px; top:25px;">Zgłoś Atrakcję</a>
+  <a href="zostan-gzdaczem.html" class="w3-bar" style="color:black; font-size: 12pt; position:relative; width:100%; height:auto; text-decoration:none; text-align:left; padding-left:15px; top:25px;">Zostań Gżdaczem</a>
+  
+  <a class="w3-bar" style="color:black; border-bottom:1px solid #d4c29d; border-top:1px solid #d4c29d; font-size: 14pt; position:relative; width:200px; padding-top:3px; top:25px;">Gmina Nysa <i class="fa fa-caret-down w3-medium" style="position:relative; top:1px;"></i></a>
+
+  <a href="dla-turystow.html" class="w3-bar" style="color:black; font-size: 12pt; position:relative; width:100%; height:auto; text-decoration:none; text-align:left; padding-left:15px; top:25px;">Dla turystów</a>
+
+</div>
+
+<!-- Vertical Navbar -->
+<div id="OpacityBackground" class="w3-col l12 m12 s12 w3-hide-small w3-hide-medium w3-card w3-container" style="position:relative; height:50px; margin:auto; border-top:1px solid gray; border-bottom:1px solid gray;">
+
+<div id="NavBars2" class="dropdown"style="display:inline-block; position:absolute; padding:0 0 0 0; height:48px; width:1%;">
+</div>
+
+<div id="NavBars2" class="dropdown"style="display:inline-block; position:absolute; padding:0 0 0 0; height:48px; width:14%; left:1%;">
+<a style="padding:0 0 0 0; width:100%; font-size:14pt; text-align:center; line-height:2.5; text-decoration:none;">Informacje<i id="spinning_arrow" class="fa fa-caret-right w3-medium" style="position:relative; left:7px; top:2px;"></i></a>
+<div class="dropdown-content w3-animate-opacity" style="animation-duration:1s; position:relative; top:2px; left:-1px; width:100.5%; border-left:1px solid gray;">
+
+<div class="dropdown-content mini_dropdown w3-animate-opacity" style="animation-duration:1s; position:relative; top:0px; left:-1px; width:100.8%; border-left:1px solid gray; border-right:1px solid gray;">
+	
+	<a class="mini_nav" href="o-nyskonie.html" style="display:block; padding:8px 0px 8px 0px; text-decoration:none; border-bottom:1px solid gray; font-size:13pt;">O Nyskonie</a>
+	<a class="mini_nav" href="poprzednie-edycje.html" style="display:block; padding:8px 0px 8px 0px; text-decoration:none; border-bottom:1px solid gray; font-size:13pt;">Poprzednie edycje</a>
+	<a class="mini_nav" href="organizacja.html" style="display:block; padding:8px 0px 8px 0px; text-decoration:none; border-bottom:1px solid gray; font-size:13pt;">Organizacja</a>
+	<a class="mini_nav" href="goscie.html" style="display:block; padding:8px 0px 8px 0px; text-decoration:none; border-bottom:1px solid gray; font-size:13pt;">Goście</a>
+	<a class="mini_nav" href="regulamin.html" style="display:block; padding:8px 0px 8px 0px; text-decoration:none; border-bottom:1px solid gray; font-size:13pt;">Regulamin</a>
+	
+</div>
+
+</div>
+</div>
+
+<div id="NavBars2" class="dropdown"style="display:inline-block; position:absolute; padding:0 0 0 0; height:48px; width:14%; left:15%;">
+<a style="padding:0 0 0 0; width:100%; font-size:14pt; text-align:center; line-height:2.5; text-decoration:none;">Strefy<i id="spinning_arrow" class="fa fa-caret-right w3-medium" style="position:relative; left:7px; top:2px;"></i></a>
+
+<div class="dropdown-content mini_dropdown w3-animate-opacity" style="animation-duration:1s; position:relative; top:2px; left:-1px; width:100.5%; border-left:1px solid gray; border-right:1px solid gray;">
+	
+	<a class="mini_nav" href="strefa-fantasy.html" style="display:block; padding:8px 0px 8px 0px; text-decoration:none; border-bottom:1px solid gray; font-size:13pt;">Fantasy</a>
+	<a class="mini_nav" href="strefa-japonska.html" style="display:block; padding:8px 0px 8px 0px; text-decoration:none; border-bottom:1px solid gray; font-size:13pt;">Japońska</a>
+	<a class="mini_nav" href="piknik-na-skraju-nysy.html" style="display:block; padding:8px 0px 8px 0px; text-decoration:none; border-bottom:1px solid gray; font-size:13pt;">Piknik na Skraju Nysy</a>
+	<a class="mini_nav" href="strefa-furry.html" style="display:block; padding:8px 0px 8px 0px; text-decoration:none; border-bottom:1px solid gray; font-size:13pt;">Furry</a>
+	<a class="mini_nav" href="strefa-pasji.html" style="display:block; padding:8px 0px 8px 0px; text-decoration:none; border-bottom:1px solid gray; font-size:13pt;">Pasji</a>
+	<a class="mini_nav" href="strefa-gier-planszowych.html" style="display:block; padding:8px 0px 8px 0px; text-decoration:none; border-bottom:1px solid gray; font-size:13pt;">Gier planszowych</a>
+	
+</div>
+
+</div>
+
+<div id="NavBars2" class="dropdown"style="display:inline-block; position:absolute; padding:0 0 0 0; height:48px; width:14%; left:29%;">
+<a style="padding:0 0 0 0; width:100%; font-size:14pt; text-align:center; line-height:2.5; text-decoration:none;">Cosplay<i id="spinning_arrow" class="fa fa-caret-right w3-medium" style="position:relative; left:7px; top:2px;"></i></a>
+<div class="dropdown-content mini_dropdown w3-animate-opacity" style="animation-duration:1s; position:relative; top:2px; left:-1px; width:100.8%; border-left:1px solid gray; border-right:1px solid gray;">
+	
+	<a class="mini_nav" href="cosplay.html" style="display:block; padding:8px 0px 8px 0px; text-decoration:none; border-bottom:1px solid gray; font-size:13pt;">Zgłoszenie</a>
+	<a class="mini_nav" href="cosplay-regulamin.html" style="display:block; padding:8px 0px 8px 0px; text-decoration:none; border-bottom:1px solid gray; font-size:13pt;">Regulamin</a>
+	<a class="mini_nav" href="sala-czempionow.html" style="display:block; padding:8px 0px 8px 0px; text-decoration:none; border-bottom:1px solid gray; font-size:13pt;">Sala Czempionów</a>
+
+</div>
+	
+</div>
+
+<div id="NavBars2" class="dropdown"style="display:inline-block; position:absolute; padding:0 0 0 0; height:48px; width:14%; left:43%;">
+<a style="padding:0 0 0 0; width:100%; font-size:14pt; text-align:center; line-height:2.5; text-decoration:none;">Bal Strojów Dawnych<i id="spinning_arrow" class="fa fa-caret-right w3-medium" style="position:relative; left:7px; top:2px;"></i></a>
+<div class="dropdown-content w3-animate-opacity" style="animation-duration:1s; position:relative; top:2px; left:-1px; width:100.8%; border-left:1px solid gray; border-right:1px solid gray;">
+
+<div class="dropdown-content mini_dropdown w3-animate-opacity" style="animation-duration:1s; position:relative; top:0px; left:-1px; width:100.5%; border-left:1px solid gray;">
+	
+	<a class="mini_nav" href="bal-strojow-dawnych.html" style="display:block; padding:8px 0px 8px 0px; text-decoration:none; border-bottom:1px solid gray; font-size:13pt;">Zgłoszenie</a>
+	<a class="mini_nav" href="bal-strojow-dawnych-regulamin.html" style="display:block; padding:8px 0px 8px 0px; text-decoration:none; border-bottom:1px solid gray; font-size:13pt;">Regulamin</a>
+	
+</div>
+
+</div>
+</div>
+
+<div id="NavBars2" class="dropdown"style="display:inline-block; position:absolute; padding:0 0 0 0; height:48px; width:14%; left:57%;">
+<a style="padding:0 0 0 0; width:100%; font-size:14pt; text-align:center; line-height:2.5; text-decoration:none;">Funtastyczna Parada<i id="spinning_arrow" class="fa fa-caret-right w3-medium" style="position:relative; left:7px; top:2px;"></i></a>
+
+<div class="dropdown-content mini_dropdown w3-animate-opacity" style="animation-duration:1s; position:relative; top:2px; left:-1px; width:100.8%; border-left:1px solid gray; border-right:1px solid gray;">
+	
+	<a class="mini_nav" href="funtastyczna-parada.html" style="display:block; padding:8px 0px 8px 0px; text-decoration:none; border-bottom:1px solid gray; font-size:13pt;">Zgłoszenie</a>
+	<a class="mini_nav" href="funtastyczna-parada-regulamin.html" style="display:block; padding:8px 0px 8px 0px; text-decoration:none; border-bottom:1px solid gray; font-size:13pt;">Regulamin</a>
+	
+</div>
+</div>
+
+<div id="NavBars2" class="dropdown"style="display:inline-block; position:absolute; padding:0 0 0 0; height:48px; width:14%; left:71%;">
+<a style="padding:0 0 0 0; width:100%; font-size:14pt; text-align:center; line-height:2.5; text-decoration:none;">Współpraca<i id="spinning_arrow" class="fa fa-caret-right w3-medium" style="position:relative; left:7px; top:2px;"></i></a>
+
+<div class="dropdown-content mini_dropdown w3-animate-opacity" style="animation-duration:1s; position:relative; top:2px; left:-1px; width:100.8%; border-left:1px solid gray; border-right:1px solid gray;">
+	
+	<a class="mini_nav" href="zglos-wystawce.html" style="display:block; padding:8px 0px 8px 0px; text-decoration:none; border-bottom:1px solid gray; font-size:13pt;">Zgłoś Wystawcę</a>
+	<a class="mini_nav" href="zglos-atrakcje.html" style="display:block; padding:8px 0px 8px 0px; text-decoration:none; border-bottom:1px solid gray; font-size:13pt;">Zgłoś Atrakcję</a>
+	<a class="mini_nav" href="zostan-gzdaczem.html" style="display:block; padding:8px 0px 8px 0px; text-decoration:none; border-bottom:1px solid gray; font-size:13pt;">Zostań Gżdaczem</a>
+	
+</div>
+</div>
+
+<div id="NavBars2" class="dropdown"style="display:inline-block; position:absolute; padding:0 0 0 0; height:48px; width:14%; left:85%;">
+<a style="padding:0 0 0 0; width:100%; font-size:14pt; text-align:center; line-height:2.5; text-decoration:none;">Gmina Nysa<i id="spinning_arrow" class="fa fa-caret-right w3-medium" style="position:relative; left:7px; top:2px;"></i></a>
+
+<div class="dropdown-content mini_dropdown w3-animate-opacity" style="animation-duration:1s; position:relative; top:2px; left:-1px; width:100.8%; border-left:1px solid gray; border-right:1px solid gray;">
+	
+
+	<a class="mini_nav" href="dla-turystow.html" style="display:block; padding:8px 0px 8px 0px; text-decoration:none; border-bottom:1px solid gray; font-size:13pt;">Dla turystów</a>
+	
+</div>
+
+</div>
+
+</div>
+
+
+<script>
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+<!-- Content -->
+
+<div class="w3-col m12 s12 w3-hide-large w3-card" style="position:relative; height:40px; background-color:rgba(240, 234, 221, 0.7); border-top:1px solid gray; border-bottom:1px solid gray;">
+<h3 class="w3-wide" style="font-size:10pt;">Strefa Gier Planszowych</h3>
+</div>
+
+  <div class="w3-col l12 m12 s12 w3-row" style="position:relative; background-color:rgba(208, 208, 208, 0); top:50px;">
+  
+    <p class="w3-col l2 m0 s0"></p>
+	<a class="w3-card w3-col l8 m12 s12" style="position:relative; margin-bottom:8px; margin-left:8px; left:-8px; text-decoration:none; background-color:rgba(240, 234, 221, 0.8); border-top:1px solid #d4c29d; border-bottom:1px solid #d4c29d;">
+	<p style="width:100%; position:relative; font-size:14pt;"><b>Rzuty kością czy karciany pojedynek?<b></p>
+	<ul style="list-style:none; position:relative; width:100%; padding-left:16px; padding-right:16px; text-align:left; font-weight:normal;">
+	<li style="font-size:12pt;">
+	
+	<p>Karczemne awantury przy kościanym pokerze? Normalna sprawa, gdy grasz z porywczymi krasnoludami, więc lepiej uważaj i nie kantuj. Możesz też spróbować sił w grach planszowych w naszych namiotach, zawsze w pobliżu znajdziesz osoby chętne do rozgrywki.</p>
+	<p>A wybór jest niemały, nasze stoiska są pełne różnych pozycji - od rodzinnych i przystępnych do bardziej zaawansowanych, dla starych wyjadaczy. Znajdziesz też popularne karcianki, takie jak Gwint czy Magic: The Gathering. Więc wytęż umysł, stwórz swoją talię i miażdż przeciwników w emocjonujących pojedynkach.</p>
+	<p>Jeśli nie będziesz mógł się zdecydować, w co chciałbyś zagrać, z pomocą przyjdzie Ci opiekun stoiska. Teraz wystarczy dorzucić do tego chęć dobrej zabawy, poznać nowych ludzi i w rezultacie znakomicie spędzisz czas.</p>
+
+
+	</li>
+	</ul>
+	</a>
+
+  </div>
+
+<!-- Footer -->
+<div id="OpacityBackgroundFooter" class="w3-card w3-col l12 m12 s12 w3-center w3-mobile" style="position:relative; margin:auto; top:100px;">
+
+<div class="w3-col l4 m12 s12 w3-center">
+<br>
+<div>
+<h4 class="w3-wide" style="position:relative; font-size:130%;">Nasi Patroni:</h4>
+<a href="http://www.nysa.eu/" target="_blank"><img class="patroni" alt="Nysa - Portal Urzędu Miejskiego" src="grafiki/LogoNysa.png" style="height:40px; border-radius:10px; position:relative; margin:4px;"></img></a>
+<a href="http://opole.tvp.pl/" target="_blank"><img class="patroni" alt="TVP3 Opole" src="grafiki/LogoTvp3.png" style="height:40px; border-radius:10px; position:relative; margin:4px;"></img></a>
+<a href="http://nysa.fm/" target="_blank"><img class="patroni" alt="Radio Nysa FM" src="grafiki/LogoNysaFm.png" style="height:40px; border-radius:10px; position:relative; margin:4px;"></img></a>
+<a href="http://fursuiting.pl/" target="_blank"><img class="patroni" alt="Fursuiting.PL" src="grafiki/LogoFur.png" style="height:40px; border-radius:10px; position:relative; margin:4px;"></img></a>
+</div>
+
+<br>
+
+<div>
+<a href="http://www.mitycznytalent.pl/" target="_blank"><img class="patroni" alt="Mityczny Talent" src="grafiki/LogoMityczny.png" style="height:40px; border-radius:10px; position:relative; margin:8px;"></img></a>
+<a href="https://nysainfo.pl/" target="_blank"><img class="patroni" alt="NysaInfo" src="grafiki/LogoNysaInfo	.png" style="height:40px; border-radius:10px; position:relative; margin:8px;"></img></a>
+<a href="https://konwenty.info/" target="_blank"><img class="patroni" alt="Informator Konwentowy" src="grafiki/LogoInformator.png" style="height:40px; border-radius:10px; position:relative; margin:8px;"></img></a>
+<a href="https://www.konwenty-poludniowe.pl/" target="_blank"><img class="patroni" alt="Konwenty Południowe" src="grafiki/LogoKonwenty.png" style="height:40px; border-radius:10px; position:relative; margin:8px;"></img></a>
+</div>
+
+<br>
+
+<div>
+<a href="http://www.telewizjaopolskie.pl/" target="_blank"><img class="patroni" alt="RTO" src="grafiki/LogoRTO.png" style="height:40px; border-radius:10px; position:relative; margin:8px;"></img></a>
+<a href="https://www.kawerna.pl/" target="_blank"><img class="patroni" alt="Kawerna - fantastyka, książki fantastyczne, fantasy - Portal z aktualnościami ze świata popkultury" src="grafiki/LogoKawerna.png" style="height:40px; border-radius:10px; position:relative; margin:8px;"></img></a>
+</div>
+
+<br>
+
+<div>
+<a href="https://shrimps.pl/" target="_blank"><img class="patroni" alt="shrimps.pl | Cosplay, Wydarzenia" src="grafiki/LogoShrimps.png" style="height:40px; border-radius:10px; position:relative; margin:8px;"></img></a>
+<a href="http://www.fundacja-nami.pl/" target="_blank"><img class="patroni" alt="Fundacja NAMI" src="grafiki/LogoNami.png" style="height:40px; border-radius:10px; position:relative; margin:8px;"></img></a>
+<a href="http://radio.opole.pl/" target="_blank"><img class="patroni" alt="Radio Opole" src="grafiki/LogoRadioOpole.png" style="height:40px; border-radius:10px; position:relative; margin:8px;"></img></a>
+<a href="https://lemurilla.wordpress.com/" target="_blank"><img class="patroni" alt="Lemurilla | Manga, anime i inksze animacje" src="grafiki/LogoLemurilla.png" style="height:40px; border-radius:10px; position:relative; margin:8px;"></img></a>
+</div>
+
+</div>
+
+<div class="w3-col l4 w3-hide-medium w3-hide-small" style="position:relative; border-left:1px solid gray; border-right:1px solid gray; padding-top:200px; top:15px;">
+
+<a href="index.html" style="position:relative; top:-100px;"><img class="patroni" style="max-height:150px;" src="grafiki/NyskonBigger.png"></img></a>
+<br>
+<a id="mini_logos" href="https://www.facebook.com/nyskon/" target="_blank" class="fab fa-facebook-square w3-xlarge" style="position:relative; top:-85px; left:-25px"></a>
+<a id="mini_logos" href="https://www.instagram.com/nyskon_official/" target="_blank" class="fab fa-instagram w3-xlarge" style="position:relative; top:-85px;"></a>
+<a id="mini_logos" href="https://discord.gg/pHSB87M" target="_blank" class="fab fa-discord w3-xlarge" style="position:relative; top:-83px; left:25px;"></a>
+
+</div>
+
+<div class="w3-col l4 m12 s12 w3-center">
+<br>
+<h4 class="w3-wide" style="position:relative; font-size:130%;">Nasi Sponsorzy:</h4>
+<a href="https://www.5zywiolow.com" target="_blank"><img class="patroni" src="grafiki/5zywiolow.png" style="height:80px; border-radius:10px; position:relative; margin:8px;"></img></a>
+<br>
+<a href="https://www.oyakata.com.pl" target="_blank"><img class="patroni" src="grafiki/oyakata.png" style="height:80px; border-radius:10px; position:relative; margin:8px;"></img></a>
+<br>
+<a href="https://www.facebook.com/fanaberia.nysa" target="_blank"><img class="patroni" src="grafiki/fanaberia.png" style="height:80px; border-radius:10px; position:relative; margin:8px;"></img></a>
+</div>
+
+<br>
+
+<div class="w3-card w3-col l12 m12 s12" style="background-color:#202020; position:relative; padding-bottom:4px; border-bottom:3px solid #d0d0d0;">
+<a href="regulamin.html" class="w3-wide" style="font-size:8pt; color:#d0d0d0; text-decoration: underline; font-weight:normal;">Regulamin</a>
+</div>
+
+<br>
+
+<div class="w3-card w3-col l12 m12 s12" style="background-color:#202020; position:relative; padding-bottom:4px;">
+<a class="w3-wide" style="font-size:8pt; color:#d0d0d0;">© 2016-2021 - Nyskon</a>
+</div>
+
+<div id="top_arrow" class="w3-bottom" style="width:32px; height:32px; position:fixed; left:15px; bottom:10px;">
+    <div style="border-radius:10px; width:80%; height:80%; background-color:#999;">
+    <a href="#top" class="fa fa-chevron-circle-up w3-xlarge;" style="text-decoration:none; width:100%; height:100%; text-align:center;position:relative; top:2px;"></a>
+	</div>	
+</div>
+</div>
+
+</body>
+</html>
